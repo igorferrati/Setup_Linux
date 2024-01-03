@@ -6,3 +6,15 @@
         name: setup_linux
         tasks_from: setup_linux.yaml
       become: yes
+
+    - name: Instalação Nginx
+      ansible.builtin.import_role:
+        name: nginx_setup
+        tasks_from: setup_nginx.yaml
+      become: yes
+    
+    - name: Instalação Docker
+      ansible.builtin.import_role:
+        name: docker_setup
+        tasks_from: docker_install.yaml
+      become: yes

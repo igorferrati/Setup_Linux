@@ -1,2 +1,2 @@
 [nginx]
-144.22.201.64 ansible_user=ubuntu ansible_ssh_private_key_file="/home/igor/projects/keys/oci/ssh-setuplinux/ssh-key-2024-01-02.key"
+168.75.71.54 ansible_user=ubuntu ansible_ssh_private_key_file="/home/igor/projects/keys/oci/ssh-setuplinux/ssh-key-2024-01-02.key"

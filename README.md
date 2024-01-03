@@ -61,11 +61,3 @@ CIRDR ```10.0.0.0/24```
 
 It's a class C network with 256 addresses and is suitable for small to medium-sized private networks.
 
-### Security
-
-### Egress
-* all protocols and all destinations
-### Ingress
-*  0.0.0.0/0 TCP
-*  0.0.0.0/0 ICMP
-* port expose 22

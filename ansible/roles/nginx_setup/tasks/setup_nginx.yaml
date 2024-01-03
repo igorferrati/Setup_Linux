@@ -1,8 +1,13 @@
 ---
 - name: Instalação nginx
-  package:
+  apt:
     name: nginx
-    state: present
+    state: latest
+
+- name: Copia novo index.html
+  copy:
+    src: /home/igor/projects/ansible/Setup_Linux/ansible/files/index.html
+    dest: /var/www/html/index.nginx-debian.html
 
 - name: Iniciar serviço
   systemd:
