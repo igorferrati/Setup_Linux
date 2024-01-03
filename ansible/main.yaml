@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks:
+    - name: Atualizações
+      ansible.builtin.import_role:
+        name: setup_linux
+        tasks_from: setup_linux.yaml
+      become: yes
