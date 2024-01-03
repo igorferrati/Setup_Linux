@@ -1,6 +1,16 @@
 # Setup_Linux
+### Ansible
 
-## Overview Architecture
+This repository it's about setup in oracle linux vm using terraform and ansible.
+
+Let's configure dependencies and start and manipulate nginx
+
+run ansible playbook to setup vm:
+``` 
+ansible-playbook main.yaml -i hosts
+```
+
+### Overview Architecture Terraform
 * VCN
 * Subnet
 * Internet Gateway
@@ -9,8 +19,6 @@
 
 Referencies [oracle repository](https://github.com/oracle/terraform-provider-oci/blob/master/examples/compute/instance/instance.tf)
 
----
-## Variables
 ### Variables Provider
 
 | Variable | Default Value | Description |
@@ -44,8 +52,6 @@ Referencies [oracle repository](https://github.com/oracle/terraform-provider-oci
 | ```subnet_cidr_block```| 10.0.0.0/24| CIDR Subnet Block |
 | ```public_subnet_name```| xxx | Subnet name |
 
----
-
 ### Network
 CIRDR ```10.0.0.0/24```
 * Network Address: ```10.0.0.0```
@@ -55,7 +61,6 @@ CIRDR ```10.0.0.0/24```
 
 It's a class C network with 256 addresses and is suitable for small to medium-sized private networks.
 
----
 ### Security
 
 ### Egress
