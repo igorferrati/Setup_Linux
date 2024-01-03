@@ -1,0 +1,11 @@
+---
+- name: Instalação nginx
+  package:
+    name: nginx
+    state: present
+
+- name: Iniciar serviço
+  systemd:
+    name: nginx
+    state: started
+    enabled: yes
